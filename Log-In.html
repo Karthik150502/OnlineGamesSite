@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient(to right, aqua, red);
+        background-size: cover;
+    }
+
+    .field1{
+        border-radius: 10px;
+        border: 2px solid black;
+        background: rgba(62, 59, 59, 0.3);
+        backdrop-filter: saturate(180%) blur(5px);
+        width: 350px;
+        height: auto;
+        position: absolute;
+        animation: anima 1s ease-in-out 0.2s;
+        top: 25%;
+        left: 35%;
+    }
+
+    legend{
+        text-align: center;
+    }
+
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+
+    }
+
+    .inner form{
+        display: block;
+        color: black;
+    }
+
+    .inputs{
+        margin: 10px;
+        margin-left: 25px;
+
+    }
+
+    .inputs input{
+        margin-left: 50px;
+    }
+
+    .field2{
+    border-radius: 10px;
+    border: 2px solid black;
+    }
+
+    .lgnd2{
+        text-align: left;
+    }
+
+    .manipulators{
+        border: 1px solid black;
+        background: rgba(62, 59, 59, 0.1);
+        backdrop-filter: saturate(180%) blur(5px);
+        border-radius: 5px;
+        margin: 10px auto;
+        width: 100px;
+        text-align: center;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        margin: auto;
+    }
+
+
+    @keyframes anima{
+        from{
+            top: 25%;
+            left: 0%;
+        }
+
+        to{
+            top: 25%;
+            left: 35%;
+        }
+    }
+</style>
+<body>
+    <div class="main">
+        <fieldset class="field1">
+            <legend>Log-in!</legend> 
+                <div class="inner">
+                    <form action="">
+                        <div class="inputs"><fieldset class="field2"><legend class="lgnd2">Username</legend>
+                            <input type="text">
+                        </fieldset></div>
+
+                        <div class="inputs"><fieldset class="field2"><legend class="lgnd2">Password</legend>
+                            <input type="password">
+                        </fieldset></div>
+                        <div class="manipulators"><a href="file:///C:/Users/Karthik/Documents/CS/CSS/Projects/GameSite/index.html" type="submit">Submit!</a></div>
+                        <div class="manipulators"><a href="" type="reset">Reset!</a></div>
+
+                    </form>
+                </div>
+        </fieldset>
+    </div>
+</body>
+</html>
